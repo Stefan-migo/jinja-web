@@ -1,0 +1,39 @@
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: padding-top 0.3s, padding-bottom 0.3s, border-color 0.3s;
+  font-size: 1.1rem; /* Adjust the font size of the input */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #666;
+  transition: top 0.3s, left 0.3s, transform 0.3s, font-size 0.3s;
+  pointer-events: none;
+  font-size: 1.1rem; /* Adjust the font size of the placeholder */
+}
+
+.input-field:focus + .placeholder,
+.input-field:not(:placeholder-shown) + .placeholder {
+  top: -1.5rem; /* Adjust the position to be above the input */
+  left: 0.75rem;
+  transform: translateY(0);
+  font-size: 0.85rem; /* Smaller font size for the label */
+  color: #333;
+}
+
+.textarea {
+  height: 150px;
+}
