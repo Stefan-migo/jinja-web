@@ -11,7 +11,7 @@ function Gallery() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('/api/instagram-posts');
+        const response = await fetch('https://jinja-server.onrender.com/api/instagram-posts');
         const data = await response.json();
         setInstagramPosts(data);
       } catch (error) {
