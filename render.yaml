@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: jinjaService
+    path: ./jinja-web
+    buildCommand: npm run build
+    publishDirectory: ./jinja-web/build
+    rewrites:
+      - source: /*
+        destination: /index.html
