@@ -60,6 +60,9 @@ export default {
       },
       backgroundImage: {
         'post-desktop': "url(assets/blog/bg1.svg)",
+        'aboutUs-bg': "url(assets/aboutUs/bg.svg)",
+        'blog-desktop': "url(assets/blog/bg.svg)",
+        'gallery-bg': "url(assets/galery/bg.svg)",
         'hero-desktop': "url(assets/hero/heroBackground.svg)",
         'contact-desktop': "url(assets/contact/bg.svg)",
         'contact-mobile': "url(assets/contact/mobileBg.svg)",

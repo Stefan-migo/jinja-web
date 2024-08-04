@@ -45,8 +45,7 @@ function AboutUs() {
 
     return (
         <section
-            className="relative w-full h-full lg:h-screen bg-cover bg-center"
-            style={{ backgroundImage: `url(${Bg})` }} id="about"
+            className="relative w-full h-full lg:h-screen bg-cover bg-center bg-aboutUs-bg"
         >
             <Section className="flex flex-col items-center justify-center h-full text-center z-10 px-4 md:px-10" >
                 <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">

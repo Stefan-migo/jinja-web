@@ -31,8 +31,7 @@ function Blog() {
   const limitedPosts = posts.slice(0, 3);
 
   return (
-    <section className="relative w-full min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${Bg})` }}>
+    <section className="relative w-full min-h-screen bg-cover bg-center bg-blog-desktop">
       <Section className="flex flex-col items-center justify-center h-full text-center z-10 px-4 md:px-10" id="blog">
         <Link to={`/blog`}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-color-4 mb-12">Blog</h2>

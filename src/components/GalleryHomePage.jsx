@@ -58,9 +58,8 @@ function GalleryHomePage() {
 
   return (
     <section
-      className="relative w-full min-h-screen bg-cover bg-center flex items-center"
+      className="relative w-full min-h-screen bg-cover bg-gallery-bg bg-center flex items-center"
       id="gallery"
-      style={{ backgroundImage: `url(${Bg})` }}
     >
       <Section className="container mx-auto px-4 md:px-10 flex justify-center">
         <div className="grid-container">
