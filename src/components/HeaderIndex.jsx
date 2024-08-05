@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 import { navigation } from '../constants/indexHeader';
 import Button from './Button.jsx';
@@ -71,20 +72,36 @@ const HeaderIndex = () => {
         >
           <HamburgerMenu />
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
-            {navigation.map((item) => (
-              <Link
-                key={item.id}
-                to={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
-                  item.onlyMobile ? 'lg:hidden' : ''
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
-                } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
-              >
-                {item.title}
-              </Link>
-            ))}
+            {navigation.map((item) =>
+              item.url.startsWith('#') ? (
+                <HashLink
+                  key={item.id}
+                  to={item.url}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
+                    item.onlyMobile ? 'lg:hidden' : ''
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
+                  smooth
+                >
+                  {item.title}
+                </HashLink>
+              ) : (
+                <Link
+                  key={item.id}
+                  to={item.url}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
+                    item.onlyMobile ? 'lg:hidden' : ''
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
+                >
+                  {item.title}
+                </Link>
+              )
+            )}
           </div>
         </nav>
         <Link to={navigation[4].url}>

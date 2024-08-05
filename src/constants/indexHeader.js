@@ -23,7 +23,7 @@
     {
       id: "4",
       title: "Contacto",
-      url: "#contact",
+      url: "/contacto",
       onlyMobile: true,
     },
   ];

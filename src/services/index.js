@@ -217,7 +217,7 @@ export const getPostDetails = async (slug) => {
 
 export const submitComment = async (obj) => {
   try {
-    const result = await fetch('https://jinja-server.onrender.comgit a/api/comments', { // Updated to point to Express server
+    const result = await fetch('https://jinja-server.onrender.com/api/comments', { // Updated to point to Express server
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
