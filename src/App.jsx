@@ -28,16 +28,17 @@ const App = () => {
       {isHomePage ? <HeaderIndex /> : <Header />}
       <WhatsAppButton />
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/blog" element={<BlogPage />} />
-        <Route exact path="/post/:slug" element={<PostDetails />} />
-        <Route exact path="/category/:slug/*" element={<CategoryPost />} />
-        <Route exact path="/about-us" element={<AboutUsPage />} />
-        <Route exact path="/catalogo" element={<CatalogPage />} />
-        <Route exact path="/contacto" element={<ContactPage />} />
-        <Route exact path="/galeria" element={<GalleryPage />} />
-        <Route exact path="/preguntas-frecuentes" element={<FAQPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/post/:slug" element={<PostDetails />} />
+        <Route path="/category/:slug/*" element={<CategoryPost />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/catalogo" element={<CatalogPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+        <Route path="/galeria" element={<GalleryPage />} />
+        <Route path="/preguntas-frecuentes" element={<FAQPage />} />
       </Routes>
+
       <Footer />
     </>
   );
