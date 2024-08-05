@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 import { navigation } from '../constants/indexHeader';
 import Button from './Button.jsx';
@@ -8,7 +8,7 @@ import MenuSvg from '../assets/header/MenuSvg.jsx';
 import { HamburgerMenu } from './design/Header.jsx';
 
 const HeaderIndex = () => {
-  const pathName = useLocation();
+  const pathName = useLocation().pathname;
   const [openNavigation, setOpenNavigation] = useState(false);
 
   useEffect(() => {
@@ -59,11 +59,11 @@ const HeaderIndex = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-5 0 w-full header-container bg-color-4">
+    <div className="fixed top-0 left-0 z-50 w-full header-container bg-color-4">
       <div className="flex items-center px-15 lg:px-7.5">
-        <a className="block w-[12rem] xl:mr-8" href="/">
+        <Link to="/">
           <img src={JinjaLogo} width={120} alt="Jinja Logo" />
-        </a>
+        </Link>
         <nav
           className={`${
             openNavigation ? 'flex nav-open' : 'hidden'
@@ -72,30 +72,30 @@ const HeaderIndex = () => {
           <HamburgerMenu />
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
                   item.onlyMobile ? 'lg:hidden' : ''
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathName.hash ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
                 } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
-        <a href={navigation[4].url}>
+        <Link to={navigation[4].url}>
           <Button
             className={`hidden lg:flex bg-color-3 text-color-4 hover:text-color-1 ${
-              navigation[4].url === pathName.hash ? 'z-2 lg:text-color-1' : 'lg:text-color-4'
+              navigation[4].url === pathName ? 'z-2 lg:text-color-1' : 'lg:text-color-4'
             }`}
           >
             {navigation[4].title}
           </Button>
-        </a>
+        </Link>
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />
         </Button>

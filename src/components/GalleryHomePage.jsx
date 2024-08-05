@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Bg from '../assets/galery/bg.svg';
 import Section from './Section';
 
 function GalleryHomePage() {
