@@ -35,10 +35,10 @@ function Footer() {
       {/* Second Block (Center Links - Above Copyright Text) */}
       <div className="hidden lg:block absolute top-14 left-[43.6%] w-1/3 text-center">
         <div className="inline-flex flex-col items-center space-y-2">
-          <Link to="/catalog">
+          <Link to="/catalogo">
             <p className="text-sm text-color-2">Catálogo</p>
           </Link>
-          <Link to="/gallery">
+          <Link to="/galeria">
             <p className="text-sm text-color-2">Galería</p>
           </Link>
           <Link to="/category/recipe">

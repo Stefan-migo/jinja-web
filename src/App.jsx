@@ -33,9 +33,9 @@ const App = () => {
         <Route exact path="/post/:slug" element={<PostDetails />} />
         <Route exact path="/category/:slug/*" element={<CategoryPost />} />
         <Route exact path="/about-us" element={<AboutUsPage />} />
-        <Route exact path="/catalog" element={<CatalogPage />} />
-        <Route exact path="/contact" element={<ContactPage />} />
-        <Route exact path="/gallery" element={<GalleryPage />} />
+        <Route exact path="/catalogo" element={<CatalogPage />} />
+        <Route exact path="/contacto" element={<ContactPage />} />
+        <Route exact path="/galeria" element={<GalleryPage />} />
         <Route exact path="/preguntas-frecuentes" element={<FAQPage />} />
       </Routes>
       <Footer />

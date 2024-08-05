@@ -18,17 +18,17 @@
     {
       id: "3",
       title: "Galería",
-      url: "/gallery",
+      url: "/galeria",
     },
     {
       id: "4",
       title: "Catálogo",
-      url: "/catalog",
+      url: "/catalogo",
     },
     {
       id: "5",
       title: "Contacto",
-      url: "/contact",
+      url: "/contacto",
       onlyMobile: true,
     },
   ];

@@ -18,7 +18,7 @@
     {
       id: "3",
       title: "Catálogo",
-      url: "/catalog",
+      url: "/catalogo",
     },
     {
       id: "4",
