@@ -69,7 +69,7 @@ function Contact() {
       id="contact"
     >
       <Section className="container grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 relative">
-        <div className="md:col-span-8 lg:col-span-6 flex flex-col space-y-8 px-4 md:px-8 lg:pl-48 lg:pt-8 lg:ml-auto">
+        <div className="md:col-span-8 lg:col-span-6 flex flex-col space-y-8 px-4 md:px-8 lg:pl-48 lg:pt-[12rem] lg:ml-auto">
           <form onSubmit={handleSendForm}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="input-container">
@@ -144,7 +144,7 @@ function Contact() {
             </button>
           </form>
         </div>
-        <div className="hidden md:block md:col-span-2 lg:pl-4 lg:pt-10 lg:col-span-6 relative">
+        <div className="hidden md:block md:col-span-2 lg:pl-4 lg:pt-[12rem] lg:col-span-6 relative">
           <div className="relative space-y-8">
             <div className="hidden absolute lg:flex items-start space-x-4" style={{ top: '0px', left: '-40px' }}>
               <img src={locationIcon} alt="Location" className="w-8 h-8" />
