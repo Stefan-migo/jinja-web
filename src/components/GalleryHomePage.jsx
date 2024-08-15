@@ -68,7 +68,7 @@ function GalleryHomePage() {
 
       {selectedPost && (
         <div className="modal">
-          <div className="modal-content bg-color-1">
+          <div className="modal-content mx-0 my-20 lg:m-[34rem] bg-color-1">
             <span className="close" onClick={closeModal}>&times;</span>
             {selectedPost.media_type === 'IMAGE' && (
               <img src={selectedPost.media_url} alt={selectedPost.caption} className="media modal-media" />

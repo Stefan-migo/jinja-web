@@ -70,8 +70,11 @@ function Footer() {
       </div>
 
       {/* Copyright text (Below Line Gradient) */}
-      <div className="absolute px-[5rem] pt-4 xl:pb-[0.75rem] bottom-[0.5rem] left-10 right-0 text-center text-sm text-color-2">
+      <div className="hidden lg:block absolute px-[5rem] pt-4 xl:pb-[0.75rem] bottom-[0.5rem] left-10 right-0 text-center text-sm text-color-2">
         © 2024 Jinja Beer y Fermentarte Creaciones, producto registrado.
+      </div>
+      <div className="lg:hidden absolute pr-[2rem] pt-4 xl:pb-[0.75rem] bottom-[0.5rem] left-10 right-0 text-center text-sm text-color-2">
+        © 2024 Jinja Beer, producto registrado.
       </div>
     </footer>
   );
