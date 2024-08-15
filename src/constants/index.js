@@ -7,7 +7,7 @@
     },
     {
       id: "1",
-      title: "Quiénes Somos",
+      title: "Manifiesto",
       url: "/about-us",
     },
     {

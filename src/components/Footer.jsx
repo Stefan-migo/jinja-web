@@ -54,12 +54,12 @@ function Footer() {
       <div className="bottom-[40px] pt-[30px] lg:pt-0 right-0 flex flex-col items-center text-center lg:text-start lg:items-end lg:absolute space-y-2 lg:pr-[50px]">
         <div className="text-sm text-color-2">
           <p className="mb-3 text-lg">Contacto</p>
-          <p className="mb-2">+5412345646</p>
+          <p className="mb-2">+549 3518013341</p>
           <p className="mb-2">fermentarte.creaciones@gmail.com</p>
           <p className="mb-2">Córdoba, Argentina</p>
         </div>
         <div className="flex items-center space-x-4 pb-4">
-          <Link to={`https://wa.me/1234567890`} target='blank'>
+          <Link to={`https://wa.me/5493518013341`} target='blank'>
           <img src={whatsappIcon} alt="WhatsApp" className="w-20 h-10" />
           </Link>
           <Link to={`https://www.instagram.com/jinja.beer/`} target='blank'>
@@ -70,7 +70,7 @@ function Footer() {
       </div>
 
       {/* Copyright text (Below Line Gradient) */}
-      <div className="absolute px-[5rem] pt-4 lg:px-0 bottom-[0.5rem] left-0 right-0 text-center text-sm text-color-2">
+      <div className="absolute px-[5rem] pt-4 xl:pb-[0.75rem] bottom-[0.5rem] left-10 right-0 text-center text-sm text-color-2">
         © 2024 Jinja Beer y Fermentarte Creaciones, producto registrado.
       </div>
     </footer>

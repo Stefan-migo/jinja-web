@@ -68,8 +68,8 @@ function Contact() {
       className="relative w-full min-h-screen justify-center bg-cover bg-center flex items-center lg:bg-contact-desktop bg-contact-mobile"
       id="contact"
     >
-      <Section className="container grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 relative">
-        <div className="md:col-span-8 lg:col-span-6 flex flex-col space-y-8 px-4 md:px-8 lg:pl-48 lg:pt-[12rem] lg:ml-auto">
+      <Section className="container grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 relative lg:bg-container-bg bg-cover bg-center ">
+        <div className="md:col-span-8 lg:col-span-6 flex flex-col space-y-8 px-4 md:px-8 lg:pl-48 lg:pt-14 xl:pt-[8rem] lg:ml-auto">
           <form onSubmit={handleSendForm}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="input-container">
@@ -144,7 +144,7 @@ function Contact() {
             </button>
           </form>
         </div>
-        <div className="hidden md:block md:col-span-2 lg:pl-4 lg:pt-[12rem] lg:col-span-6 relative">
+        <div className="hidden md:block md:col-span-2 lg:pl-4 lg:pt-14 xl:pt-[8rem]  lg:col-span-6 relative">
           <div className="relative space-y-8">
             <div className="hidden absolute lg:flex items-start space-x-4" style={{ top: '0px', left: '-40px' }}>
               <img src={locationIcon} alt="Location" className="w-8 h-8" />
@@ -154,10 +154,10 @@ function Contact() {
             </div>
 
             <div className="absolute flex items-center space-x-4" style={{ top: '70px', left: '-40px' }}>
-              <Link to={`https://wa.me/1234567890`} target='blank'>
+              <Link to={`https://wa.me/5493518013341`} target='blank'>
                 <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" /></Link>
-              <Link to={`https://wa.me/1234567890`} target='blank'>
-                <p className="text-lg text-color-4">123456789</p>
+              <Link to={`https://wa.me/5493518013341`} target='blank'>
+                <p className="text-lg text-color-4">+5493518013341</p>
               </Link>
             </div>
             <div className="absolute flex items-center space-x-4" style={{ top: '165px', left: '-40px' }}>
@@ -168,7 +168,7 @@ function Contact() {
                 <p className="text-lg text-color-4">jinja.beer</p>
               </Link>
             </div>
-            <div className="absolute flex items-center space-x-4" style={{ top: '350px', left: '-40px' }}>
+            <div className="absolute flex items-center space-x-4" style={{ top: '310px', left: '-40px' }}>
               <img src={emailIcon} alt="Email" className="w-8 h-8" />
               <p className="text-lg text-color-4">fermentarte.creaciones@gmail.com</p>
             </div>

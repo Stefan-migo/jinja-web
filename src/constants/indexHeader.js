@@ -2,7 +2,7 @@
   export const navigation = [
     {
       id: "0",
-      title: "Quiénes Somos",
+      title: "Manifiesto",
       url: "#about",
     },
     {

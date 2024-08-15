@@ -60,8 +60,8 @@ const HeaderIndex = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-50 w-full header-container bg-color-4">
-      <div className="flex items-center px-15 lg:px-7.5">
+    <div className="fixed top-0 left-0 right-4 z-50 w-full header-container bg-color-4">
+      <div className="flex items-center px-15 lg:px-[4.5rem]">
         <Link to="/">
           <img src={JinjaLogo} width={120} alt="Jinja Logo" />
         </Link>

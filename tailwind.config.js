@@ -65,6 +65,7 @@ export default {
         'gallery-bg': "url(assets/gallery/bg.svg)",
         'hero-desktop': "url(assets/hero/heroBackground.svg)",
         'contact-desktop': "url(assets/contact/bg.svg)",
+        'container-bg': "url(assets/contact/containerBg.svg)",
         'contact-mobile': "url(assets/contact/mobileBg.svg)",
         'footer-desktop': "url(assets/footer/footerBg.svg)",
         'footer-mobile': "url(assets/footer/mobileBg.svg)",

@@ -2,7 +2,7 @@ import React from 'react';
 import WhatsAppIcon from '../assets/footer/whatsapp.svg'; 
 
 const WhatsAppButton = () => {
-  const whatsappLink = 'https://wa.me/1234567890'; // Replace with your number
+  const whatsappLink = 'https://wa.me/5493518013341'; // Replace with your number
 
   return (
     <a
