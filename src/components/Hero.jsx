@@ -37,10 +37,12 @@ const Hero = () => {
               ¡Explora el sabor del <span className="relative inline-block">Jengibre!<img src={curve} className="absolute top-full left-0 w-full xl:" width={624} height={28} alt="Curve" /></span>
             </h1>
             <p className="max-w-3xl mx-[2.5rem] lg:mx-auto  mb-6 text-color-4 lg:mb-8">Descubre Jinja Beer, una bebida artesanal de jengibre que combina lo mejor de la naturaleza con el arte de la fermentación. Saludable, refrescante y 100% artesanal.</p>
-            <Link to={`/catalog`}>
-                            <span className="button items-center justify-center box-border py-5 mt-2 mb-3 mr-5 ml-10 
+            
+              <a href="/catalogoWeb.pdf" download="catalogoWeb.pdf">
+              <span className="button items-center justify-center box-border py-5 mt-2 mb-3 mr-5 ml-10 
     text-center rounded-2xl px-7 transition duration-500 ease transform hover:-translate-y-1 inline-flex bg-color-4 text-color-2 hover:text-color-3 cursor-pointer">Catálogo</span>
-                        </Link>
+                </a>              
+                        
           </div>
           <div className="hidden lg:flex justify-end fade-in">
             <img src={heroBottle} className="w-auto h-auto max-h-full max-w-full" alt="Hero Bottle"/>

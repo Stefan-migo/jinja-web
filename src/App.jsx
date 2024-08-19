@@ -7,13 +7,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PostDetails from './pages/post/[slug]'; // Ensure correct import
 import AboutUsPage from './pages/AboutUsPage';
-import CatalogPage from './pages/CatalogPage';
 import HeaderIndex from './components/HeaderIndex';
 import ContactPage from './pages/ContactPage';
 import WhatsAppButton from './components/WhatsAppButton';
 import GalleryPage from './pages/GalleryPage';
 import CategoryPost from './pages/category/[slug]';
 import FAQPage from './pages/FAQPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const location = useLocation();
@@ -26,6 +26,7 @@ const App = () => {
         <meta name="description" content="Discover the best ginger beer in town with our Jinja blog. Stay updated with the latest news, recipes, and more!" />
       </Helmet>
       {isHomePage ? <HeaderIndex /> : <Header />}
+      <ScrollToTop />
       <WhatsAppButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -33,7 +34,6 @@ const App = () => {
         <Route path="/post/:slug" element={<PostDetails />} />
         <Route path="/category/:slug/*" element={<CategoryPost />} />
         <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/catalogo" element={<CatalogPage />} />
         <Route path="/contacto" element={<ContactPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
         <Route path="/preguntas-frecuentes" element={<FAQPage />} />

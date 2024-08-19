@@ -35,16 +35,16 @@ function Footer() {
       {/* Second Block (Center Links - Above Copyright Text) */}
       <div className="hidden lg:block absolute top-14 left-[43.6%] w-1/3 text-center">
         <div className="inline-flex flex-col items-center space-y-2">
-          <Link to="/catalogo">
+          <a href='/catalogoWeb.pdf' download="catalogoWeb.pdf">
             <p className="text-sm text-color-2">Catálogo</p>
-          </Link>
+          </a>
           <Link to="/galeria">
             <p className="text-sm text-color-2">Galería</p>
           </Link>
           <Link to="/category/recipe">
             <p className="text-sm text-color-2">Recetas</p>
           </Link>
-          <Link to="/">
+          <Link to="/post/reciclar">
             <p className="text-sm text-color-2">Recicla tu Botella</p>
           </Link>
         </div>
@@ -60,10 +60,10 @@ function Footer() {
         </div>
         <div className="flex items-center space-x-4 pb-4">
           <Link to={`https://wa.me/5493518013341`} target='blank'>
-          <img src={whatsappIcon} alt="WhatsApp" className="w-20 h-10" />
+            <img src={whatsappIcon} alt="WhatsApp" className="w-20 h-10" />
           </Link>
           <Link to={`https://www.instagram.com/jinja.beer/`} target='blank'>
-          <img src={instagramIcon} alt="Instagram" className="w-20 h-10" />
+            <img src={instagramIcon} alt="Instagram" className="w-20 h-10" />
           </Link>
           <img src={likeIcon} alt="Like" className="w-20 h-10" />
         </div>

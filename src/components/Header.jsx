@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 z-50 w-full header-container  bg-color-4">
+    <div className="fixed top-0 left-0 z-50 w-full header-container bg-color-4">
       <div className="flex items-center px-15 lg:px-[4.5rem]">
         <Link to="/">
           <img src={JinjaLogo} width={120} alt="Jinja Logo" />
@@ -43,18 +43,34 @@ const Header = () => {
           <HamburgerMenu />
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <Link
-                key={item.id}
-                to={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
-                  item.onlyMobile ? 'lg:hidden' : ''
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
-                } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
-              >
-                {item.title}
-              </Link>
+              item.title === "Catálogo" ? (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  download="catalogoWeb.pdf"
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
+                    item.onlyMobile ? 'lg:hidden' : ''
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
+                >
+                  {item.title}
+                </a>
+              ) : (
+                <Link
+                  key={item.id}
+                  to={item.url}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
+                    item.onlyMobile ? 'lg:hidden' : ''
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
+                >
+                  {item.title}
+                </Link>
+              )
             ))}
           </div>
         </nav>

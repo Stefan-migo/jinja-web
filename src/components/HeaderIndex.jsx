@@ -73,7 +73,21 @@ const HeaderIndex = () => {
           <HamburgerMenu />
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) =>
-              item.url.startsWith('#') ? (
+              item.title === "Catálogo" ? (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  download="catalogoWeb.pdf"
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
+                    item.onlyMobile ? 'lg:hidden' : ''
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    pathName === item.url ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                  } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
+                >
+                  {item.title}
+                </a>
+              ) : item.url.startsWith('#') ? (
                 <HashLink
                   key={item.id}
                   to={item.url}
@@ -81,7 +95,7 @@ const HeaderIndex = () => {
                   className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
                     item.onlyMobile ? 'lg:hidden' : ''
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                    pathName === item.url ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
                   } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
                   smooth
                 >
@@ -95,7 +109,7 @@ const HeaderIndex = () => {
                   className={`block relative font-code text-2xl uppercase text-color-2 transition-colors nav-link ${
                     item.onlyMobile ? 'lg:hidden' : ''
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                    item.url === pathName ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
+                    pathName === item.url ? 'z-2 lg:text-color-3' : 'lg:text-color-2'
                   } lg:leading-5 lg:hover:text-color-3 xl:px-12`}
                 >
                   {item.title}
@@ -104,7 +118,7 @@ const HeaderIndex = () => {
             )}
           </div>
         </nav>
-        <Link to={navigation[4].url}>
+        <a href={navigation[4].url}>
           <Button
             className={`hidden lg:flex bg-color-3 text-color-4 hover:text-color-1 ${
               navigation[4].url === pathName ? 'z-2 lg:text-color-1' : 'lg:text-color-4'
@@ -112,7 +126,7 @@ const HeaderIndex = () => {
           >
             {navigation[4].title}
           </Button>
-        </Link>
+        </a>
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />
         </Button>

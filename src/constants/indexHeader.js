@@ -18,7 +18,7 @@
     {
       id: "3",
       title: "Catálogo",
-      url: "/catalogo",
+      url: "/catalogoWeb.pdf",  // Points to the PDF in the public directory
     },
     {
       id: "4",
@@ -29,3 +29,4 @@
   ];
   
   
+ 
