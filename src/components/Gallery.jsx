@@ -54,7 +54,7 @@ function Gallery() {
 
       {selectedPost && (
         <div className="modal">
-          <div className="modal-content m-0 lg:m-[34rem] bg-color-1">
+          <div className="modal-content m-0 lg:m-[34rem] xl:m-[46rem] bg-color-1">
             <span className="close" onClick={closeModal}>&times;</span>
             {selectedPost.media_type === 'IMAGE' && (
               <img src={selectedPost.media_url} alt={selectedPost.caption} className="media" />

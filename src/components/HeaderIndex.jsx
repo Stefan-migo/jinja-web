@@ -118,15 +118,15 @@ const HeaderIndex = () => {
             )}
           </div>
         </nav>
-        <a href={navigation[4].url}>
-          <Button
+        <Link to={navigation[4].url}>
+        <Button
             className={`hidden lg:flex bg-color-3 text-color-4 hover:text-color-1 ${
               navigation[4].url === pathName ? 'z-2 lg:text-color-1' : 'lg:text-color-4'
             }`}
           >
             {navigation[4].title}
           </Button>
-        </a>
+        </Link>
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation} />
         </Button>
