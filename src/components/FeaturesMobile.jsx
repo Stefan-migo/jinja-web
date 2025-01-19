@@ -9,22 +9,22 @@ function Features() {
     {
       icon: icon1,
       title: "Artesanal",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      description: "Cada botella de Jinja Beer es elaborada con dedicación y cuidado, siguiendo técnicas tradicionales de fermentación."
     },
     {
       icon: icon2,
       title: "Hecho en Argentina",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      description: "Orgullosamente producido en Córdoba, apoyando a productores locales y manteniendo altos estándares de calidad."
     },
     {
       icon: icon3,
       title: "100% Vegano",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      description: "Nuestra bebida es completamente vegana, apta para quienes siguen una alimentación basada en plantas."
     },
     {
       icon: icon4,
       title: "Libre de T.A.C.C",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      description: "Perfecto para celíacos y quienes buscan productos libres de gluten. Disfruta sin preocupaciones."
     }
   ];
 
